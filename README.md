@@ -1,3 +1,31 @@
+1.Register User
+
+POST https://blog.kata.academy/api/users
+Body: {
+  "user": {
+    "username": "artem",
+    "email": "artem@mail.com",
+    "password": "12345678"
+  }
+}
+
+2.Login User
+
+POST https://blog.kata.academy/api/users/login
+Body: {
+  "user": {
+    "email": "artem@mail.com",
+    "password": "12345678"
+  }
+}
+
+3.Current User
+
+GET https://blog.kata.academy/api/user
+Authorization Token "my_token"
+
+
+Response:
 {
     "user": {
         "username": "artem",
